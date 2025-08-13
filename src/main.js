@@ -224,11 +224,12 @@ const workData = [
 ];
 const workGrid = document.getElementById('workGrid');
 // Image mapping reverted to local user-provided images under /images/bottom
+// NOTE: Filenames normalized for Vercel deployment (no spaces, corrected typos)
 const caseImages = {
   'FinTech Dashboard': { src: '/images/bottom/fintech.jpg', alt: 'FinTech dashboard visual' },
-  'Logistics Platform': { src: '/images/bottom/logystic.jpg', alt: 'Logistics platform visual' },
+  'Logistics Platform': { src: '/images/bottom/logistics.jpg', alt: 'Logistics platform visual' },
   'E-Commerce Core': { src: '/images/bottom/ecommerce2.jpg', alt: 'E-Commerce core visual' },
-  'Analytics Suite': { src: '/images/bottom/analystic.jpg', alt: 'Analytics suite visual' }
+  'Analytics Suite': { src: '/images/bottom/analytics.jpg', alt: 'Analytics suite visual' }
 };
 workData.forEach(w => {
   const el = document.createElement('div'); el.className='case';
@@ -288,8 +289,8 @@ workData.forEach(w => {
   const items = [
     { title:'SaaS Platform', desc:'High-performance subscription & billing UX', img:'/images/saas.jpg', url:'#' },
     { title:'E-Commerce', desc:'Headless storefront experience optimization', img:'/images/ecommerce.jpg', url:'#' },
-    { title:'Portfolio', desc:'Personal brand & case study presentation', img:'/images/portofolio.jpg', url:'#' },
-    { title:'Business System', desc:'Internal operations & workflow system', img:'/images/buisines%20system.jpg', url:'#' }
+    { title:'Portfolio', desc:'Personal brand & case study presentation', img:'/images/portfolio.jpg', url:'#' },
+    { title:'Business System', desc:'Internal operations & workflow system', img:'/images/business-system.jpg', url:'#' }
   ];
   // Preload then render with fade-in and indicator cycling
   let loaded = 0;
